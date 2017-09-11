@@ -1,0 +1,42 @@
+SSRF Document: 
+https://docs.google.com/document/d/1v1TkWZtrhzRLy0bYXBcdLUedXGb9njTNIJXa3u9akHM/edit?usp=sharing 
+
+
+
+SSRF Advanced Cheat Sheet - Bug Bounty
+http://127.0.0.1
+http://127.1   ----> connects to same 127.0.0.1
+http://187.12   ---> connects to 187.0.0.12 --> http://twitter.com
+http://187.1.2  --> connects to 187.1.0.2 
+
+Octal Conversion 
+
+http://0177.1   ---> 127.0.0.01  ( 0177 octal = 127 decimal)
+
+
+Hex Conversion
+
+http://0x7f.1/   ---> http://127.0.0.1   ( 0x7f = 127)
+
+Reference: 
+https://www.psyon.org/tools/ip_address_converter.php
+http://www.subnetmask.info/
+
+URL :
+
+http://
+https://
+ftp://
+file://
+gopher://
+dict://
+php:// 
+jar:// 
+tftp://
+
+
+
+IPv6
+
+http://[::1]
+http://[::]
